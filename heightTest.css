@@ -17,7 +17,33 @@ body {
     border: 10px solid red;
     height: 100%;
 }
+.box01_inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box01_ele {
+    margin-top: auto;
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: red;
+}
 .box02 {
     border: 10px solid blue;
     height: 100vh;
+}
+.box02_inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box02_ele {
+    margin-top: auto;
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: blue;
 }
