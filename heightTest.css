@@ -4,6 +4,7 @@
 }
 html {
     height: 100%;
+    height: -webkit-fill-available;
 }
 body {
     display: flex;
@@ -46,4 +47,23 @@ body {
     font-size: 20px;
     color: #fff;
     background: blue;
+}
+.box03 {
+    border: 10px solid green;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+.box03_inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box03_ele {
+    margin-top: auto;
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: green;
 }
