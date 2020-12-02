@@ -13,39 +13,33 @@ body {
 .box {
     flex: 1;
     box-sizing: border-box;
+    text-align: center;
 }
-.box01 {
-    border: 10px solid red;
-    height: 100%;
-}
-.box01_inner {
+.inner {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.box01_ele {
+.ele {
     margin-top: auto;
     width: 50%;
     line-height: 30px;
     font-size: 20px;
     color: #fff;
+}
+
+.box01 {
+    border: 10px solid red;
+    height: 100%;
+}
+.box01 .ele {
     background: red;
 }
 .box02 {
     border: 10px solid blue;
     height: 100vh;
 }
-.box02_inner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.box02_ele {
-    margin-top: auto;
-    width: 50%;
-    line-height: 30px;
-    font-size: 20px;
-    color: #fff;
+.box02 .ele {
     background: blue;
 }
 .box03 {
@@ -54,38 +48,29 @@ body {
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
-.box03_inner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.box03 .inner {
+    min-height: -webkit-fill-available;
 }
-.box03_ele {
-    margin-top: auto;
-    width: 50%;
-    line-height: 30px;
-    font-size: 20px;
-    color: #fff;
+.box03 .ele {
     background: green;
 }
 .box04 {
+    position: relative;
     border: 10px solid pink;
     height: calc(var(--vh, 1vh) * 100);
 }
-.box04_inner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 .box04_ele {
-    margin-top: auto;
-    width: 50%;
-    line-height: 30px;
-    font-size: 20px;
-    color: #fff;
     background: pink;
 }
-
-
+.absolute_box {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
 .fix_box {
     position: fixed;
     bottom: 30px;
