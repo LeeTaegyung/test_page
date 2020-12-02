@@ -4,7 +4,7 @@
 }
 html {
     height: 100%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
 }
 body {
     display: flex;
@@ -66,4 +66,21 @@ body {
     font-size: 20px;
     color: #fff;
     background: green;
+}
+.box04 {
+    border: 10px solid pink;
+    height: calc(var(--vh, 1vh) * 100);
+}
+.box04_inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box04_ele {
+    margin-top: auto;
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: pink;
 }
