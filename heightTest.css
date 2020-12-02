@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
-#wrap {
+html {
+    height: 100%;
+}
+body {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 .box {
     flex: 1;
