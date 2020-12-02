@@ -11,6 +11,7 @@ body {
     height: 100%;
 }
 .box {
+    position: relative;
     flex: 1;
     box-sizing: border-box;
     text-align: center;
@@ -55,7 +56,6 @@ body {
     background: green;
 }
 .box04 {
-    position: relative;
     border: 10px solid pink;
     height: calc(var(--vh, 1vh) * 100);
 }
